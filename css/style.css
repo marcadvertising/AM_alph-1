@@ -1,0 +1,125 @@
+/**** of Nav ****/
+.header {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(160, 160, 160, 0.799),
+      rgba(97, 187, 107, 0.95)
+    ),
+    url(../img/feature/1.jpeg);
+}
+.header__head {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+}
+@media only screen and (max-width: 901px) {
+  .social {
+    flex-direction: row !important;
+    justify-content: space-around;
+    font-size: 150%;
+  }
+  .navlink {
+    text-align: center;
+  }
+  .navlink li {
+    padding: 15px 0;
+  }
+}
+/****End of Nav ****/
+/**** General ****/
+section {
+  padding: 3rem 0;
+}
+/*****Footer*****/
+.footer__social {
+  margin-top: 1rem;
+  padding: 0;
+}
+.footer__social--links {
+  list-style: none;
+  display: inline;
+  margin: 0 1rem;
+  font-size: 1.3rem;
+}
+.footer__social--link:link,
+.footer__social--linl:visited {
+  text-decoration: none;
+  color: #4caf50 !important;
+}
+.navbar .dropdown-menu a{
+  color: green!important;
+}
+.main-photo {
+  width: 350px;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.info {
+  position: relative;
+  text-align: center;
+}
+.nat{
+  display: inline-block;
+  margin: 0 auto;
+
+
+  width: 300px;}
+  
+
+  @media only screen and (min-width: 992px) {
+    .nat{
+    position: absolute;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: -125px;
+    z-index: 0;
+    width: 300px;}
+    
+  }
+.header__img {
+  position: absolute;
+  width: 400px;
+  bottom: 0;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.about {
+  margin-top: 200px;
+}
+
+.features__box {
+  height: 300px;
+  background-image: url(../img/feature/1.jpeg);
+  background-position: center;
+  margin-bottom: 1.6rem;
+}
+
+.address__box {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.address__box--text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.img-fluid{
+  display: inline-block !important;
+}
+.question{
+  max-width: 260px !important;
+}
