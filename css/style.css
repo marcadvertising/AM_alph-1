@@ -292,5 +292,8 @@
 }
 /****Cards in About us****/
 .header-1{
-  background-image: url(../img/feature/1.jpeg)
+  background-image: url(../img/feature/1.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 85vh !important;
 }
