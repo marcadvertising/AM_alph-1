@@ -1,29 +1,81 @@
-/**** of Nav ****/
+/*background-image: linear-gradient(
+  to bottom,
+  rgba(160, 160, 160, 0.799),
+  rgba(97, 187, 107, 0.95)
+),*/
+/**** Headers ****/
 .header {
   position: relative;
-  height: 50vh;
+  height: 70vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(160, 160, 160, 0.799),
-      rgba(97, 187, 107, 0.95)
-    ),
-    url(../img/feature/1.jpeg);
+}
+.header-main {
+  background-image:url(../img/section/Therapists.jpeg);
+  height: 70vh;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.header-service-massage {
+  background-image: url(../img/section/massage-service.jpeg);
+  background-position: bottom;
+}
+.header-service-naturopathic {
+  background-image: url(../img/section/header-naturopathic.jpeg);
+  background-position: center;
+}
+.header-service-acupuncture {
+  background-image: url(../img/section/header-acupuncture.jpeg);
+}
+.header-service-physiotherapy {
+  background-image: url(../img/section/header-physiotherapy.jpeg);
+}
+.header-service-chiropractic {
+  background-image: url(../img/section/Chiropractic.jpeg);
 }
 .header__head {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-weight: bolder;
 }
+.header__naturopathic {
+  height: 70vh;
+  background-size: cover;
+  background-position: bottom;
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(160, 160, 160, 0.799)), to(rgba(97, 187, 107, 0.95))), url(../img/headers/naturopathic.jpeg);
+  background-image: linear-gradient( to bottom, rgba(160, 160, 160, 0.799), rgba(97, 187, 107, 0.95)), url(../img/headers/naturopathic.jpeg);
+}
+.header__acupuncture {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(160, 160, 160, 0.799)), to(rgba(97, 187, 107, 0.95))), url(../img/headers/acupuncture.jpeg);
+  background-image: linear-gradient( to bottom, rgba(160, 160, 160, 0.799), rgba(97, 187, 107, 0.95)), url(../img/headers/acupuncture.jpeg);
+}
+.header__chiropractic {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(160, 160, 160, 0.799)), to(rgba(97, 187, 107, 0.95))), url(../img/headers/Chiropractic.jpeg);
+  background-image: linear-gradient( to bottom, rgba(160, 160, 160, 0.799), rgba(97, 187, 107, 0.95)), url(../img/headers/Chiropractic.jpeg);
+}
+/**** End of Headers ****/
+
 @media only screen and (max-width: 901px) {
   .social {
-    flex-direction: row !important;
-    justify-content: space-around;
+    box-orient: horizontal !important;
+    -webkit-box-orient: horizontal !important;
+    box-direction:  normal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     font-size: 150%;
   }
   .navlink {
@@ -33,69 +85,100 @@
     padding: 15px 0;
   }
 }
-/****End of Nav ****/
-/**** General ****/
-section {
-  padding: 3rem 0;
-}
+
 /*****Footer*****/
 .footer__social {
   margin-top: 1rem;
   padding: 0;
 }
+
 .footer__social--links {
   list-style: none;
   display: inline;
   margin: 0 1rem;
   font-size: 1.3rem;
 }
+
 .footer__social--link:link,
 .footer__social--linl:visited {
   text-decoration: none;
   color: #4caf50 !important;
 }
-.navbar .dropdown-menu a{
-  color: green!important;
+
+.navbar .dropdown-menu a {
+  color: green !important;
 }
+
 .main-photo {
   width: 350px;
   bottom: 0;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
+
+/* Services on main page */
+
+.service {
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.service:hover {
+  margin-top: -5px;
+}
+
+.services-more:link,
+.services-more:visited {
+  text-decoration: none;
+  color: #4caf50;
+}
+
+/* Services on main page */
+
 .info {
   position: relative;
   text-align: center;
 }
-.nat{
-  display: inline-block;
+
+/*componan home pag */
+
+.naturopathic-img {
+  display: inherit;
   margin: 0 auto;
+  width: 300px;
+}
 
-
-  width: 300px;}
-  
-
-  @media only screen and (min-width: 992px) {
-    .nat{
+@media only screen and (min-width: 992px) {
+  .naturopathic-img {
     position: absolute;
     display: inline-block;
     margin: 0 auto;
     margin-top: -125px;
+    left: 40%;
     z-index: 0;
-    width: 300px;}
-    
+    width: 300px;
   }
+}
+
+/*End componan home pag */
+
 .header__img {
   position: absolute;
   width: 400px;
   bottom: 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   left: 50%;
 }
 
 .about {
   margin-top: 200px;
+}
+
+.btn-white {
+  color: #4caf50 !important;
 }
 
 .features__box {
@@ -114,12 +197,97 @@ section {
   position: absolute;
   top: 60%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
 }
-.img-fluid{
+
+.img-fluid {
   display: inline-block !important;
 }
-.question{
+.question {
   max-width: 260px !important;
 }
+/*-----Wave--------*/
+.main-photo {
+  width: 100%;
+}
+/*----waving effect---*/
+.wave {
+  width: 100%;
+  margin-bottom: -2px;
+}
+.wave-buttom {
+  margin-bottom: -10px;
+}
+/*----end waving effect---*/
+/***Rounded items***/
+.btn-round {
+  border-radius: 100px;
+}
+.img-round {
+  border-radius: 20px;
+}
+/***End of Rounded items***/
+/****Cards in About us****/
+.cards {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 25rem;
+}
+.cards__side {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.cards__side--front {
+  background-color: white;
+  height: 100%;
+}
+.cards__side--back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  padding: 1rem;
+  color: grey white;
+  height: 100%;
+}
+.cards:hover .cards__side--front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.cards:hover .cards__side--back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+.card-img-top {
+  border-radius: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .cards {
+    height: 30rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cards {
+    height: 40rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cards {
+    height: 35rem;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .cards {
+    height: 33rem;
+  }
+}
+/****Cards in About us****/

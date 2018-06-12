@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +12,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Chiropractic</title>
 </head>
-
 <body>
     <nav class="navbar fixed-top sticky-top navbar-expand-lg navbar-dark  green z-depth-1">
         <a class="navbar-brand white z-depth-2" href="#">
-            <!--<img src="img/logo.png" alt="">-->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -31,14 +28,20 @@
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Chiropractic</a>
-                        <a class="dropdown-item" href="physiotherapy.html">Physiotherapy</a>
-                        <a class="dropdown-item" href="acupuncture.html">Acupuncture</a>
-                        <a class="dropdown-item" href="naturopathic.html">Naturopathic</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="massagetherapy.html">Massage Therpay</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Chiropractic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="physiotherapy.html">Physiotherapy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acupuncture.html">Acupuncture</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="naturopathic.html">Naturopathic</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../aboutus/">About Us</a>
@@ -66,23 +69,24 @@
             </ul>
         </div>
     </nav>
-    <header class="header">
-        <div class="header__head">
-            <img src="../img/logo.png" alt="logo" class="header__head">
-        </div>
-    </header>
-    <main class="container">
-<section class="chiropractic">
-    <div class="text-center green-text">
-        <img src="../img/2.png" alt="service" class="service-img">
-        <h3>Chiropractic</h3>
-    </div>
-    <p class="lead text-justify">Chiropractic helps to remove postural imbalances and structural misalignments that can accumulate in our bodies over
-        time. Our spines change and develop problems just like our teeth, eyes and heart. Left unchecked for a long time,
-        these changes may lead to pain, stiffness or other more serious problems.
-    </p>
-</section>
-<section class="chiropractic-more">
+    <header class="header header-service-chiropractic">
+            <div class="header__head">
+                <h1 class="h1-responsive white-text text-center">Chiropractic</h1>
+            </div>
+            <img src="../img/wavewhite.png" alt="main-photo" class="main-photo img-fluid wave-buttom">
+        </header>
+    <main class="container mt-5">
+        <section class="chiropractic">
+            <div class="text-center green-text">
+                <img src="../img/2.png" alt="service" class="service-img">
+                <h3>Chiropractic</h3>
+            </div>
+            <p class="lead text-justify">Chiropractic helps to remove postural imbalances and structural misalignments that can accumulate in our bodies
+                over time. Our spines change and develop problems just like our teeth, eyes and heart. Left unchecked for
+                a long time, these changes may lead to pain, stiffness or other more serious problems.
+            </p>
+        </section>
+        <section class="chiropractic-more mt-5 mb-5">
             <div class="row">
                 <div class="col-lg-5 col-xl-5 pb-3">
                     <div class="view overlay text-center">
@@ -103,14 +107,15 @@
                         and perfected over years in clinical practice.</p>
                 </div>
             </div>
-
         </section>
     </main>
-    <section class="green more pt-5">
+    <img src="../img/wavegreen.png" alt="wave" class="img-fluid wave">
+
+    <section class="green more pt-5  pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-xl-7">
-                    <h3 class="mb-4 font-weight-bold white-text">
+                    <h3 class="mb-4 font-weight-bold white-text h3-responsive">
                         <strong>3 Stages of Chiropractic Care:</strong>
                     </h3>
                     <p class="lead white-text">Phase 1: Relief Care</p>
@@ -128,7 +133,7 @@
                 <div class="col-lg-5 col-xl-5">
                     <!--Featured image-->
                     <div class="view overlay rounded z-depth-2">
-                        <img src="../img/feature/1.jpeg" alt="" class="img-fluid">
+                        <img src="../img/feature/1.jpeg" alt="" class="img-fluid img-round">
                         <a>
                             <div class="mask rgba-white-slight"></div>
                         </a>
@@ -137,8 +142,6 @@
             </div>
         </div>
     </section>
-    <!-- The Footer Sectiion will start below 
-************************************* -->
     <footer class="page-footer font-small">
         <div class="container-fluid text-center">
             <img src="../img/logo.png" alt="Logo">
@@ -166,8 +169,6 @@
             © 2018 Copyright: Aurora Massage Centre
         </div>
     </footer>
-    <!--End of Footer-->
-    <!--Javascript-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
